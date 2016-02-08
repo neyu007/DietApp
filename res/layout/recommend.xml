@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:id="@+id/isNormalLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal" >
+        
+	        <TextView 
+	       	    android:id="@+id/tvNormal" 
+	       	    android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	   	        android:layout_marginLeft="65dip" 
+	   	        android:layout_marginTop="25dip" 
+	       	    android:text="Normal" 
+	       	    android:textAppearance="?android:attr/textAppearanceMedium"
+	       	    android:textColor="#40403f" 
+	       	    android:textStyle="bold" />
+		
+		    <TextView
+		        android:id="@+id/tvVegetarian"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="40dip"
+		        android:layout_marginTop="25dip"
+		        android:text="Vegetarian"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="#40403f"
+		        android:textStyle="bold" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/MealTimeLayout"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content" 
+	        android:orientation="horizontal">
+		    </LinearLayout>
+		    
+	    <LinearLayout
+	        android:id="@+id/textViewBreakFastLabel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="25dip"
+	            android:layout_marginTop="30dip"
+	            android:text="Breakfast"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#4e8504"
+	            android:textSize="20sp"
+	            android:textStyle="italic|bold" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/tvFirst"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="25dip"
+	                android:text="meat"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <TextView
+	                android:id="@+id/tvFirstServing"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:text="serving"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <ImageButton
+	                android:id="@+id/btnFirst"
+	                android:layout_width="48dip"
+	                android:layout_height="25dip"
+	                android:background="@drawable/pricebutton_breakfast" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	          android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/tv2nd"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="25dip"
+	                android:layout_marginTop="20dip"
+	                android:text="vegetable"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <TextView
+	                android:id="@+id/tv2ndServing"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="20dip"
+	                android:text="serving"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <ImageButton
+	                android:id="@+id/btn2ndPrice"
+	                android:layout_width="48dip"
+	                android:layout_height="25dip"
+	                android:layout_marginTop="20dip"
+	                android:background="@drawable/pricebutton_breakfast" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"	           
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/tv3rd"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="25dip"
+	                android:layout_marginTop="20dip"
+	                android:text="fruit"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <TextView
+	                android:id="@+id/tv3rdServing"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="20dip"
+	                android:text="serving"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <ImageButton
+	                android:id="@+id/btn3rdPrice"
+	                android:layout_width="48dip"
+	                android:layout_height="25dip"
+	                android:layout_marginTop="20dip"
+	                android:background="@drawable/pricebutton_breakfast" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/tv4th"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="25dip"
+	                android:layout_marginTop="20dip"
+	                android:text="rice"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <TextView
+	                android:id="@+id/tv4thServing"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="20dip"
+	                android:text="serving"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#4e8504"
+	                android:textStyle="normal" />
+
+	            <ImageButton
+	                android:id="@+id/btn4thPrice"
+	                android:layout_width="48dip"
+	                android:layout_height="25dip"
+	                android:layout_marginTop="20dip"
+	                android:background="@drawable/pricebutton_breakfast" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+
+	            <ImageButton
+	                android:id="@+id/btnShuffle"
+	                android:layout_width="74dip"
+	                android:layout_height="33dip"
+	                android:layout_marginLeft="170dp"
+	                android:layout_marginTop="190dp"
+	                android:background="@drawable/shuffle" />
+
+	            <ImageButton
+	                android:id="@+id/okbutton1"
+	                android:layout_width="37dip"
+	                android:layout_height="37dip"
+	                android:layout_marginLeft="20dp"
+	                android:layout_marginTop="190dp"
+	                android:background="@drawable/arrow_proceed" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	        </LinearLayout>
+	    </LinearLayout>
+
+	</LinearLayout>
+    
+</ScrollView>

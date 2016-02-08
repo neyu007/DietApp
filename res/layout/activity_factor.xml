@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/physical_activity_factor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/how_active_are_you_everyday_"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.07"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioGroupPhysicalActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip"
+                android:gravity="right" >
+
+                <RadioButton
+                    android:id="@+id/RBbedRest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/RBveryLightActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_weight="1"  />
+
+                <RadioButton
+                    android:id="@+id/RBlightActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"  />
+
+                <RadioButton
+                    android:id="@+id/RBmoderateActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/RBheavyActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginRight="5dip">
+
+                <ImageView
+                    android:id="@+id/bed_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dip"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/bedrest"
+                    android:contentDescription="@string/bed_rest" />
+
+                <ImageView
+                    android:id="@+id/sedentary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dip"
+                    android:src="@drawable/sedentary" 
+                    android:contentDescription="@string/very_light_active_sedentary"/>
+
+                <ImageView
+                    android:id="@+id/lightactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dip"
+                    android:src="@drawable/lightactive"
+                    android:contentDescription="@string/light_active" />
+
+                <ImageView
+                    android:id="@+id/moderateactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dip"
+                    android:src="@drawable/moderateactive"
+                    android:contentDescription="@string/moderate_active" />
+
+                <ImageView
+                    android:id="@+id/heavyactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dip"
+                    android:src="@drawable/heavyactive"
+                    android:contentDescription="@string/heavy_active" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnConfirmActivityFactor"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="250dip"
+            android:background="@drawable/weightheight_proceed" />
+        	
+    </LinearLayout>
+
+</ScrollView>

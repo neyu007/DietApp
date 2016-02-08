@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dietaryapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ 
+    
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+    
+    <permission
+      android:name="com.example.dietaryapplication.MAPS_RECEIVE"
+      android:protectionLevel="signature"/>
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="com.example.dietaryapplication.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<!-- The following two permissions are not required to use
+	     Google Maps Android API v2, but are recommended. -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+	<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>	
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_happy_fit"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:logo="@drawable/ic_happy_fit">
+        <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyBQlAgjrSa52DNUBPLauzAYBoHqljRiEaA"/>
+        <meta-data
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version" />
+        
+        
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name=".Age"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.AGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                
+        
+        <activity
+            android:name=".Gender"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.Gender" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+             <activity
+            android:name=".WeightHeight"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.WEIGHTHEIGHT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".Constraints"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.CONSTRAINTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".ActivityFactor"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.ACTIVITYFACTOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.USERDETAILSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.HOMEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".RecommendActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.RECOMMENDACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.CALENDARACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".BreakfastActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.BREAKFAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.LUNCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".DinnerActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.DINNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".MilesStoneActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.MILESTONE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PriceActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sheda.PRICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+<!--         <receiver android:name=".BootReceiver" -->
+<!-- 		        android:enabled="false"> -->
+<!-- 		    <intent-filter> -->
+<!-- 		        <action android:name="android.intent.action.BOOT_COMPLETED"></action> -->
+<!-- 		    </intent-filter> -->
+<!-- 		</receiver> -->
+		 <receiver android:name=".NotificationPublisher" />
+<!-- 		<receiver android:name=".AlarmReceiver"/> -->
+<!--         <service android:name=".SchedulingService"/> -->
+    </application>
+
+</manifest>

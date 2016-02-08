@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="pounds">pounds</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="kilograms">kilograms</string>
+    <string name="height">Height</string>
+    <string name="feet">feet</string>
+    <string name="centimeters">centimeters</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter">Enter</string>
+    <string name="exit">Exit</string>
+    <string name="health_conditions">Health Conditions</string>
+    <string name="any_health_related_conditions_">Any health related conditions?</string>
+    <string name="none">None</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="highblood">Highblood</string>
+    <string name="physical_activity_factor">Physical Activity Factor</string>
+    <string name="how_active_are_you_everyday_">How active are you everyday?</string>
+    <string name="bed_rest">Bed Rest</string>
+    <string name="_non_ambulatory_hospital_patients_">[Non-ambulatory, hospital patients]</string>
+    <string name="very_light_active_sedentary">Very Light Active / Sedentary</string>
+    <string name="_clerk_secretary_accountant_office_employee_or_mostly_sitting_activity_">[Clerk, secretary, accountant, office employee or mostly sitting activity]</string>
+    <string name="light_active">Light Active</string>
+    <string name="_student_tailor_housewife_with_helper_doctors_nurse_teachers_">[Student, tailor, housewife with helper, doctors, nurse, teachers]</string>
+    <string name="moderate_active">Moderate Active</string>
+    <string name="_housewife_without_helper_heavy_housework_gardener_carpenter_">[Housewife without helper, heavy housework, gardener, carpenter]</string>
+    <string name="heavy_active">Heavy Active</string>
+    <string name="farmer_with_crude_machinery_construction_worker_lumber_jacks_swimmer">Farmer with crude machinery, construction worker, lumber jacks, swimmer</string>
+    <string name="title_activity_activity_factor">ActivityFactor</string>
+    <string name="happyfit">happyfitlogo</string>
+    <string name="bedrest">bedrest_icon</string>
+    <string name="proceed">arrow_proceed</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center" >
+	    
+	    <ImageView
+	        android:id="@+id/imageView4"
+	        android:layout_width="125dp"
+	        android:layout_height="125dp"
+	        android:layout_marginTop="50dp"
+	        android:gravity="center"
+	        android:src="@drawable/weightheight_icon" />
+	    </LinearLayout>
+	    
+	<LinearLayout
+	    android:id="@+id/LinearLayout3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center" >
+    
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="40dp"
+	        android:text="Height"
+	        android:textSize="20sp"
+	        android:layout_gravity="left"
+	        android:textStyle="bold" />
+	    <LinearLayout
+		    android:id="@+id/LinearLayout4"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+		    <EditText
+		        android:id="@+id/feetTF"
+		        android:layout_width="100dp"
+		        android:layout_height="40dp"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/border"
+		        android:ems="10"
+		        android:paddingLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:hint="feet"
+		        android:inputType="number"
+		        android:singleLine="true" >
+		         <requestFocus /> </EditText>
+		    
+		     <EditText
+		        android:id="@+id/inchesTF"
+		        android:layout_width="100dp"
+		        android:layout_height="40dp"
+		        android:layout_marginTop="10dp"
+		        android:paddingLeft="10dp"
+		        android:background="@drawable/border"
+		        android:ems="10"
+		        android:hint="inches"
+		        android:inputType="number"
+		        android:singleLine="true" />
+	     </LinearLayout>
+	    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/LinearLayout5"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="left" >
+	    
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="40dp"
+	        android:text="Weight"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    <LinearLayout
+	        android:id="@+id/LinearLayout6"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="left" >
+
+			    <EditText
+			        android:id="@+id/weightTF"
+			        android:layout_width="80dp"
+			        android:layout_height="40dp"
+			        android:background="@drawable/border"
+			        android:ems="10"
+			        android:layout_marginLeft="50dp"
+			        android:inputType="number|numberDecimal|numberSigned"
+			        android:paddingLeft="30dp"
+			        android:singleLine="true" ></EditText>
+			    
+			    <ImageButton
+			        android:id="@+id/btnkilograms"
+			        android:layout_width="50dip"
+			        android:layout_height="30dip"
+			        android:layout_marginLeft="20dp"
+			        android:background="@drawable/kilogram" />
+
+			    <ImageButton
+			        android:id="@+id/btnpounds"
+			        android:layout_width="50dip"
+			        android:layout_height="30dip"
+			        android:layout_marginLeft="20dp"
+			        android:background="@drawable/pound" />
+			  </LinearLayout>
+			  </LinearLayout>
+			    
+
+   		<LinearLayout
+   		    android:id="@+id/LinearLayout7"
+		   android:layout_width="match_parent"
+      	  	android:layout_height="match_parent"
+        	android:gravity="bottom"
+        	android:orientation="horizontal" >
+	    
+   		    
+
+   			<ImageButton
+   			    android:id="@+id/ibtnConfirm"
+   			       android:layout_width="50dip"
+		        android:layout_height="50dip"
+		        android:layout_marginBottom="25dp"
+		        android:layout_marginLeft="240dp"
+   			    android:background="@drawable/weightheight_proceed"
+   			     />
+
+			</LinearLayout>
+
+
+</LinearLayout>
